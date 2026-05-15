@@ -1,7 +1,7 @@
 // api/constants.ts
 export const API_CONFIG = {
   // Kept clean without a trailing slash to handle path splicing correctly
-  BASE_URL: 'https://webptheory.muhammadalifora08022.workers.dev/rest',
+  BASE_URL: 'API Key ',
   
   // The secret value passed for authentication
   BEARER_TOKEN: '123456789',
