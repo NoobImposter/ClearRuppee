@@ -1,87 +1,110 @@
-# Welcome to React Router!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+# ClearRupee 💳
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+**ClearRupee** is an AI-powered financial intelligence dashboard designed for the Pakistani market[cite: 1]. It transforms complex bank statements into intuitive visual insights, enabling users to track expenses, manage assets, and detect financial patterns through a clean, premium interface[cite: 1].
 
 ---
 
-Built with ❤️ using React Router.
+## 🖼️ Screenshots
+
+<!-- 
+INSTRUCTIONS FOR SCREENSHOTS:
+1. Upload your image files to a 'screenshots' folder in this repository.
+2. Replace the 'src' path below with your file path (e.g., ./screenshots/dashboard.png).
+-->
+
+<p align="center">
+  <img src="https://via.placeholder.com/800x450?text=Dashboard+Overview" alt="Dashboard Overview" width="800">
+  <br>
+  <em>Main Financial Dashboard</em>
+</p>
+
+<p align="center">
+  <img src="https://via.placeholder.com/400x250?text=Spending+Analysis" alt="Spending Analysis" width="400">
+  <img src="https://via.placeholder.com/400x250?text=Asset+Distribution" alt="Asset Distribution" width="400">
+  <br>
+  <em>Spending Analysis & Asset Distribution Views</em>
+</p>
+
+---
+
+## ✨ Key Features
+
+* **Bank Statement Visualization:** Automated parsing of statements into interactive charts[cite: 1].
+* **AI-Driven Insights:** Detection of hidden bank charges and unusual spending behavior[cite: 1].
+* **Minimalist UI:** High-performance dashboard designed with a "Deep Blue & Soft Teal" professional palette[cite: 1].
+* **Smart Categorization:** Automatic classification of transactions for effortless budgeting[cite: 1].
+
+## 🛠 Tech Stack
+
+* **Frontend:** React (TypeScript)[cite: 1]
+* **State Management:** Zustand[cite: 1]
+* **Styling:** Tailwind CSS[cite: 1]
+* **Backend:** Cloudflare Workers (Serverless)[cite: 1]
+* **Database:** Cloudflare D1 / WatermelonDB[cite: 1]
+
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
+```bash
+git clone [https://github.com/NoobImposter/ClearRuppee.git](https://github.com/NoobImposter/ClearRuppee.git)
+cd ClearRuppee
+npm install
+
+```
+
+### 2. API Configuration 🔑
+
+For security, API keys are managed externally.
+
+1. Locate the **Private Comment** in the Google Classroom.
+
+
+2. Navigate to `src/components/apis/`.
+
+
+3. Open or create the file `constants.ts`.
+
+
+4. Paste the provided API constants into this file.
+
+
+
+**⚠️ Security Note:** Ensure `constants.ts` is ignored by git to prevent leaking your private API keys.
+
+### 3. Development
+
+```bash
+npm run dev
+
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+├── src
+│   ├── components
+│   │   ├── apis        # API services & constants.ts (Paste keys here)
+│   │   └── ui          # Reusable dashboard components
+│   ├── store           # Zustand global state
+│   ├── hooks           # Custom React hooks
+│   └── views           # Main application screens
+├── screenshots         # Folder for application images
+└── workers             # Serverless backend logic
+
+```
+
+---
+
+## 🎓 Academic Context
+
+Developed as part of a **Final  Project For Web Thoery CS3010** focusing on financial intelligence and data visualization.
+
+
+```
+
+```
